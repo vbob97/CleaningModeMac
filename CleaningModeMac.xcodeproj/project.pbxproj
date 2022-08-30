@@ -10,7 +10,7 @@
 		385EE88428BCFF8B00BA4042 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385EE88328BCFF8B00BA4042 /* AppDelegate.swift */; };
 		385EE88628BCFF8B00BA4042 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385EE88528BCFF8B00BA4042 /* ViewController.swift */; };
 		385EE88828BCFF8D00BA4042 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 385EE88728BCFF8D00BA4042 /* Assets.xcassets */; };
-		385EE88B28BCFF8D00BA4042 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 385EE88928BCFF8D00BA4042 /* Main.storyboard */; };
+		385EE89528BD010900BA4042 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385EE89428BD010900BA4042 /* main.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -18,8 +18,9 @@
 		385EE88328BCFF8B00BA4042 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		385EE88528BCFF8B00BA4042 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		385EE88728BCFF8D00BA4042 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		385EE88A28BCFF8D00BA4042 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		385EE88C28BCFF8D00BA4042 /* CleaningModeMac.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CleaningModeMac.entitlements; sourceTree = "<group>"; };
+		385EE89428BD010900BA4042 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		385EE89628BD03BE00BA4042 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,11 +53,12 @@
 		385EE88228BCFF8B00BA4042 /* CleaningModeMac */ = {
 			isa = PBXGroup;
 			children = (
+				385EE89628BD03BE00BA4042 /* Info.plist */,
 				385EE88328BCFF8B00BA4042 /* AppDelegate.swift */,
 				385EE88528BCFF8B00BA4042 /* ViewController.swift */,
 				385EE88728BCFF8D00BA4042 /* Assets.xcassets */,
-				385EE88928BCFF8D00BA4042 /* Main.storyboard */,
 				385EE88C28BCFF8D00BA4042 /* CleaningModeMac.entitlements */,
+				385EE89428BD010900BA4042 /* main.swift */,
 			);
 			path = CleaningModeMac;
 			sourceTree = "<group>";
@@ -120,7 +122,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				385EE88828BCFF8D00BA4042 /* Assets.xcassets in Resources */,
-				385EE88B28BCFF8D00BA4042 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -133,21 +134,11 @@
 			files = (
 				385EE88628BCFF8B00BA4042 /* ViewController.swift in Sources */,
 				385EE88428BCFF8B00BA4042 /* AppDelegate.swift in Sources */,
+				385EE89528BD010900BA4042 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		385EE88928BCFF8D00BA4042 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				385EE88A28BCFF8D00BA4042 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		385EE88D28BCFF8D00BA4042 /* Debug */ = {
@@ -275,8 +266,8 @@
 				DEVELOPMENT_TEAM = 787JW6JZLD;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CleaningModeMac/Info.plist;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				INFOPLIST_KEY_NSMainStoryboardFile = Main;
 				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -302,8 +293,8 @@
 				DEVELOPMENT_TEAM = 787JW6JZLD;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CleaningModeMac/Info.plist;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				INFOPLIST_KEY_NSMainStoryboardFile = Main;
 				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
